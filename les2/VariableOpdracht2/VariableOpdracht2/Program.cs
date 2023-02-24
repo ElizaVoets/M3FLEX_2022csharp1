@@ -19,11 +19,11 @@ namespace VariableOpdracht2
             //automod, waarde: staat automod aan?
             twitchStream.name = "Philza";
             twitchStream.lastStreamName = "We b u i l d";
-            Game streamGame = new Game("Minecraft");
+            twitchStream.streamGame = new Game("Minecraft");
             twitchStream.followers = 4143502;
             twitchStream.automod = true;
 
-            Console.WriteLine("He plays block game ("+ streamGame.name + ")");
+            Console.WriteLine("He plays block game ("+ twitchStream.streamGame.name + ")");
         }
     }
 }
